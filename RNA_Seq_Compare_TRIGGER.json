@@ -1,0 +1,7 @@
+{
+  "WorkflowUrl": "https://coad41462116cec6c.blob.core.windows.net/inputs/rnaseq_compare_workflow_coa.wdl",
+  "WorkflowInputsUrl": "https://coad41462116cec6c.blob.core.windows.net/inputs/rnaseq_compare_inputs.json",
+  "WorkflowInputsUrls": null,
+  "WorkflowOptionsUrl": null,
+  "WorkflowDependenciesUrl": null
+}

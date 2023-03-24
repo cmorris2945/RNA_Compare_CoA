@@ -1,0 +1,68 @@
+{   
+    "rnaseq_compare.workflow_dnanexusbbdukmetrics" : "/m2gentransfer2/dnanexus/transfer/m2gen_RNA_Seq/alignment_GRCh38_v32/PJKNCUNWI4/SL526218.trimming.stats.txt",
+    "rnaseq_compare.workflow_cromwellbbdukmetrics" : "/coad41462116cec6c/cromwell-executions/rnaseq_coa/0ae3e44b-fa89-4ee3-b118-8f5feb87fe99/call-bbduk/execution/SL526218.trimming.stats.txt",
+    "rnaseq_compare.workflow_sampleId" : "SL526218",
+	 
+    "rnaseq_compare.workflow_dnanexusgenesresults" : "/m2gentransfer2/dnanexus/transfer/m2gen_RNA_Seq/gene_expression_GRCh38_v32/SL526218.genes.results",
+    "rnaseq_compare.workflow_cromwellgenesresults" : "/coad41462116cec6c/cromwell-executions/rnaseq_coa/0ae3e44b-fa89-4ee3-b118-8f5feb87fe99/call-gene_annotation/execution/SL526218.genes.results",
+	
+    "rnaseq_compare.workflow_dnanexusisoformsresults" : "/m2gentransfer2/dnanexus/transfer/m2gen_RNA_Seq/gene_expression_GRCh38_v32/SL526218.isoforms.results",
+    "rnaseq_compare.workflow_cromwellisoformsresults" : "/coad41462116cec6c/cromwell-executions/rnaseq_coa/0ae3e44b-fa89-4ee3-b118-8f5feb87fe99/call-rsem_calc_expr/execution/SL526218.isoforms.results",
+    
+    "rnaseq_compare.workflow_dnanexusgenomebam" : "/m2gentransfer2/dnanexus/transfer/m2gen_RNA_Seq/alignment_GRCh38_v32/PJKNCUNWI4/SL526218.genome.cram",
+    "rnaseq_compare.workflow_cromwellgenomebam" : "/coad41462116cec6c/cromwell-executions/rnaseq_coa/0ae3e44b-fa89-4ee3-b118-8f5feb87fe99/call-star_align/execution/SL526218.Aligned.sortedByCoord.out.bam",
+    "rnaseq_compare.workflow_dnanexustranscriptomebam" : "/m2gentransfer2/dnanexus/transfer/m2gen_RNA_Seq/alignment_GRCh38_v32/PJKNCUNWI4/SL526218.transcriptome.bam",
+    "rnaseq_compare.workflow_cromwelltranscriptomebam" : "/coad41462116cec6c/cromwell-executions/rnaseq_coa/0ae3e44b-fa89-4ee3-b118-8f5feb87fe99/call-star_align/execution/SL526218.Aligned.toTranscriptome.out.bam",
+
+    "rnaseq_compare.workflow_dnanexusstarfusion" : "/m2gengenomics/dnanexus/transfer/m2gen_RNA_Seq/gene_fusion_GRCh38_v32/PJKNCUNWI4/SL526218.star-fusion.fusion_predictions.tsv",
+    "rnaseq_compare.workflow_cromwellstarfusion" : "/coad41462116cec6c/cromwell-executions/rnaseq_coa/0ae3e44b-fa89-4ee3-b118-8f5feb87fe99/call-star_fusion/execution/SL526218.star-fusion.fusion_predictions.tsv",
+    "rnaseq_compare.workflow_dnanexusarribafusion" : "/m2gentransfer2/dnanexus/transfer/m2gen_RNA_Seq/gene_fusion_GRCh38_v32/PJKNCUNWI4/SL526218.arriba.fusion_predictions.tsv",
+    "rnaseq_compare.workflow_cromwellarribafusion" : "/coad41462116cec6c/cromwell-executions/rnaseq_coa/0ae3e44b-fa89-4ee3-b118-8f5feb87fe99/call-arriba_fusion/execution/SL526218.arriba.fusion_predictions.tsv",
+    "rnaseq_compare.workflow_dnanexusmergefusion" : "/m2gengenomics/dnanexus/transfer/m2gen_RNA_Seq/gene_fusion_GRCh38_v32/PJKNCUNWI4/SL526218.merged.filtered.fusion_predictions.tsv",
+    "rnaseq_compare.workflow_cromwellmergefusion" : "/coad41462116cec6c/cromwell-executions/rnaseq_coa/0ae3e44b-fa89-4ee3-b118-8f5feb87fe99/call-merge_fusions/execution/SL526218.merged.filtered.fusion_predictions.tsv",
+
+    "rnaseq_compare.workflow_dnanexusrnaseqqcmetrics" : "/m2gentransfer2/dnanexus/transfer/m2gen_RNA_Seq/RNA_SeQC_v32/PJKNCUNWI4/SL526218.metrics.tsv",
+    "rnaseq_compare.workflow_cromwellrnaseqqcmetrics" : "/coad41462116cec6c/cromwell-executions/rnaseq_coa/0ae3e44b-fa89-4ee3-b118-8f5feb87fe99/call-rna_seqc/execution/metrics/SL526218.metrics.tsv",
+
+    "rnaseq_compare.trimcompare.dockerImage" : "ubuntu:20.04",
+    "rnaseq_compare.trimcompare.numCpus" : "4",
+    "rnaseq_compare.trimcompare.memorySize" : "16G",
+    "rnaseq_compare.trimcompare.diskSize" : "100G",
+    "rnaseq_compare.trimcompare.isPreemptible" : "false",
+
+    "rnaseq_compare.tpmcompare.dockerImage" : "ubuntu:20.04",
+    "rnaseq_compare.tpmcompare.numCpus" : "4",
+    "rnaseq_compare.tpmcompare.memorySize" : "16G",
+    "rnaseq_compare.tpmcompare.diskSize" : "100G",
+    "rnaseq_compare.tpmcompare.isPreemptible" : "false",
+
+
+    "rnaseq_compare.bamcompare.dockerImage" : "bladerunner26354/ubuntu_samtools_20:latest",
+    "rnaseq_compare.bamcompare.numCpus" : "8",
+    "rnaseq_compare.bamcompare.memorySize" : "32G",
+    "rnaseq_compare.bamcompare.diskSize" : "128G",
+    "rnaseq_compare.bamcompare.isPreemptible" : "false",
+
+	
+    "rnaseq_compare.fusioncompare.dockerImage" : "ubuntu:20.04",
+    "rnaseq_compare.fusioncompare.numCpus" : "4",
+    "rnaseq_compare.fusioncompare.memorySize" : "16G",
+    "rnaseq_compare.fusioncompare.diskSize" : "100G",
+    "rnaseq_compare.fusioncompare.isPreemptible" : "false",
+
+    "rnaseq_compare.rnaseqqccompare.dockerImage" : "ubuntu:20.04",
+    "rnaseq_compare.rnaseqqccompare.numCpus" : "4",
+    "rnaseq_compare.rnaseqqccompare.memorySize" : "16G",
+    "rnaseq_compare.rnaseqqccompare.diskSize" : "100G",
+    "rnaseq_compare.rnaseqqccompare.isPreemptible" : "false",
+
+	
+    "rnaseq_compare.eccompare.dockerImage" : "ubuntu:20.04",
+    "rnaseq_compare.eccompare.numCpus" : "4",
+    "rnaseq_compare.eccompare.memorySize" : "16G",
+    "rnaseq_compare.eccompare.diskSize" : "100G",
+    "rnaseq_compare.eccompare.isPreemptible" : "false"
+}
+
+
+

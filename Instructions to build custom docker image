@@ -1,0 +1,11 @@
+step1: save the docker file (Dockerfile which has a command to install samtools to a public ubuntu:20.04 image) to the server.
+
+step2: docker build -t ubuntu20_samtools --file Dockerfile .
+
+step3: sudo docker build -t home/ubuntu20_samtools:latest .    #need to provide dockerhub username
+
+step4: sudo docker push home/ubuntu20_samtools:latest  #to publish a docker image to docker hub. # remember to replace the word "home" in the pathway, to whichever your USERNAME is on dockerhub or it won't work. EX: "the_name_of_my_docker_image/my_image_name"
+
+step5: sudo docker pull home/ubuntu20_samtools:latest #to pull the docker in the terminal
+
+step6: sudo docker run -v /home/home/RESEARCH/CROMWELL:/mycromwell -it "the_name_of_my_docker_image"/ubuntu20_samtools:latest /bin/bash  #to run docker image and to link the working directory
